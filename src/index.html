@@ -1,26 +1,98 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Tortilla de Patatas</title>
   </head>
   <body>
     <div class="uoc-container">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+        <img src="./assets/images/logo.png?width=350" alt="Logo de Tortilla de Patatas" class="uoc-logo" />
       </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+      <header class="page-header">
+        <h1 class="title"><i class="plato"></i>Tortilla de Patatas</h1>
+        <img src="./assets/images/Tortilla_prin.jpg" alt="Imagen de tortilla de patatas" class="section__image-img" /> 
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#sobre" class="nav__link">Sobre la receta</a></li>
+            <li class="nav__item"><a href="#ingredientes" class="nav__link">Ingredientes</a></li>
+            <li class="nav__item"><a href="#elaboracion" class="nav__link">Elaboración</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Bloque principal -->
+      <main class="main-content">
+        <section id="sobre" class="section section--about">
+          <h2 class="section_title"><i class="plato"></i>Sobre la Tortilla de Patatas</h2>
+          <hr> 
+          <p class="section_description">
+            La tortilla de patatas, también conocida como tortilla española, es uno de los platos más emblemáticos de la gastronomía española. Se elabora con pocos ingredientes, pero su sabor es inconfundible. La receta básica consiste en huevos, patatas y cebolla, aunque hay variantes que incluyen otros ingredientes como pimientos o chorizo.
+            <br><br>
+            La tortilla de patatas se puede comer tanto caliente como fría y es un plato que se sirve en casi todos los bares y restaurantes de España. Se puede disfrutar como tapa, como plato principal o en bocadillo.
+          </p>
+        </section>
+
+        <!-- Sección ingredientes -->
+        <section id="ingredientes" class="section section--ingredients">
+          <h2 class="section__title">Ingredientes</h2>
+          <hr>
+          <ul class="ingredients-list">
+            <li class="ingredients-list__item">Patatas <span class="ingredients-list__dots"></span> 700 g</li>
+            <li class="ingredients-list__item">Huevos <span class="ingredients-list__dots"></span> 300 g</li>
+            <li class="ingredients-list__item">Cebolla <span class="ingredients-list__dots"></span> 150 g</li>
+            <li class="ingredients-list__item">Aceite de oliva <span class="ingredients-list__dots"></span> 30-50 g</li>
+            <li class="ingredients-list__item">Sal <span class="ingredients-list__dots"></span> A gusto</li>
+          </ul>
+        </section>
+        
+
+        <!-- Sección elaboración -->
+        <section id="elaboracion" class="section section--elaboration">
+          <h2 class="section_title">Elaboración</h2>
+          <hr> 
+          <p class="section_description">
+            1. Pelar las patatas y cortarlas en finas rodajas o en trozos pequeños, dependiendo de la preferencia.
+            <br>
+            <img src="./assets/images/cortar_Patatas.jpg" alt="Imagen de cortar patatas" class="section__image-img" />
+            <button class="btn btn--secondary">Ver Video del Paso</button>
+            <br>
+            2. Calentar abundante aceite de oliva en una sartén grande a fuego medio.
+            <br>
+            <img src="./assets/images/calentar_Aceite.jpg" alt="Imagen de calentar aceite" class="section__image-img" />
+            <button class="btn btn--secondary">Ver Video del Paso</button>
+            <br>
+            3. Añadir las patatas y la cebolla, previamente cortada en juliana, al aceite y cocinar a fuego lento hasta que estén tiernas (aproximadamente 20 minutos).
+            <br>
+            <img src="./assets/images/cocinar_Patatas.jpg" alt="Imagen de cocinar patatas" class="section__image-img" />
+            <button class="btn btn--secondary">Ver Video del Paso</button>
+            <br>
+            4. Batir los huevos en un bol grande y añadir una pizca de sal.
+            <br>
+            5. Escurrir las patatas y la cebolla del aceite y mezclarlas con los huevos batidos.
+            <br>
+            6. Verter la mezcla en una sartén con un poco de aceite caliente y cocinar a fuego medio, dando la vuelta a la tortilla cuando esté cuajada por un lado (esto puede ser complicado, pero con práctica se consigue).
+            <br>
+            <img src="./assets/images/voltear_Tortilla.jpg" alt="Imagen de tortilla de patatas" class="section__image-img" />
+            <button class="btn btn--secondary">Ver Video del Paso</button>
+            <br>
+            7. Una vez que la tortilla esté cocida por ambos lados, retirar del fuego y dejar reposar unos minutos antes de servir.
+            <br>
+            <img src="./assets/images/servir_Tortilla.jpg" alt="Imagen de tortilla de patatas" class="section__image-img" />
+            <br>
+          </p>
+          <section class="cta">
+            <button class="btn btn--primary">Guardar Receta</button>
+            <button class="btn btn--secondary">Compartir en Facebook</button>
+            <button class="btn btn--secondary">Volver a la página principal</button>
+          </section>
+        </section>
+      </main>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

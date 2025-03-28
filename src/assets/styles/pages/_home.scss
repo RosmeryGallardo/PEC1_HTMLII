@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  font-family: $font-family-sans-serif;
+  @include font-size-responsive(16px);
+  line-height: 24px;
+  background-color: $color-bg;
+  color: $color-primary;
+}
+
+.uoc-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.uoc-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  max-width: 200px;
+  height: auto;
+
+  @media (min-width: $mqMinWidth) {
+    max-width: none;
+  }
+}
+
+.uoc-title {
+  font-family: $font-family-sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-primary;
+
+  @include font-size-responsive(24px, 36px);
+}
+
+.uoc-footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  @include font-size-responsive(12px, 14px);
+}
+// Sección Elaboración
+.section {
+  &--elaboration { 
+    .section__image-img {
+      width: 100%;
+      max-width: 500px; 
+      height: auto;
+      display: block;
+      margin: 10px auto; 
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+      
+      @media (max-width: 768px) {
+        max-width: 90%; 
+      }
+    }
+    
+    .section_description { 
+      text-align: left; 
+      @include font-size-responsive(14px, 16px);
+    }
+  }
+}

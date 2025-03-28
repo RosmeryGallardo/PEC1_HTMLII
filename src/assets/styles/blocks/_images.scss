@@ -1,0 +1,38 @@
+ // Bloque para la imagen dentro de una sección
+ .section {
+    &__image-img {
+      width: $cover-width;
+      height: $cover-height;
+      object-fit: cover; 
+      border-radius: 10px; 
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+  
+      // Modificadores para diferentes tamaños
+      &--small {
+        height: 250px;
+      }
+  
+      &--large {
+        height: 450px;
+      }
+    }
+  }
+
+   // Bloque para la imagen dentro de una sección
+.section {
+    &__image-img {
+      width: $cover-width;
+      height: $cover-height;
+      object-fit: cover; 
+      border-radius: 10px; 
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+  
+      &--small {
+        height: 250px;
+      }
+  
+      &--large {
+        height: 450px;
+      }
+    }
+  }

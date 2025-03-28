@@ -1,0 +1,9 @@
+@mixin font-size-responsive($size, $mq-size: null) {
+    font-size: rem($size);
+  
+    @if $mq-size {
+      @media (min-width: $mqMinWidth) {
+        font-size: rem($mq-size);
+      }
+    }
+  }

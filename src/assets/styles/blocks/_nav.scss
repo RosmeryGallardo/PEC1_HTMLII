@@ -1,0 +1,39 @@
+
+@import "../base/variables";
+.nav {
+    background-color: $color-primary;
+    padding: $padding-base;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    border-radius: $border-radius;
+
+    &__nav {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    &__list {
+      display: flex;
+      list-style: none;  
+      padding: 0;
+      margin: 0;
+     
+    }
+  
+    &__item {
+        display: flex;
+      & a {
+        color: $color-white;
+        text-decoration: none;
+        padding: $padding-base;
+        font-size: $font-size-base;
+        font-weight: 500;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: darken-color($color-white, 10%); 
+        }
+      }
+    }
+  }
