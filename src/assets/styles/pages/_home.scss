@@ -48,12 +48,6 @@ body {
   @include font-size-responsive(24px, 36px);
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
-  @include font-size-responsive(12px, 14px);
-}
 // Sección Elaboración
 .section {
   &--elaboration { 
@@ -70,9 +64,25 @@ body {
       }
     }
     
-    .section_description { 
+    .section__description { 
       text-align: left; 
       @include font-size-responsive(14px, 16px);
     }
   }
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+.section__title {
+  font-size: 1.2rem;
+}
+
+.section__image-img {
+  max-width: 90%;
+}
 }

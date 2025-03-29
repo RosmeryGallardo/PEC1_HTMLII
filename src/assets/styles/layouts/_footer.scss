@@ -1,0 +1,17 @@
+
+.uoc-footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    @include font-size-responsive(12px, 14px);
+  }
+  
+  .footer-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: $gap-between-icons;
+    padding: 1rem;
+
+  }
+  
